@@ -151,3 +151,25 @@ function sortLength(array) {
 }
 
 // console.log(sortLength(people));
+
+var products = [
+    { name: 'Basketball', price: 12.00 },
+    { name: 'Tennis Racquet', price: 66.00 },
+    { name: 'Tennis Balls', price: 9.00 },
+    { name: 'Tennis Balls', price: 9.00 }
+    ];
+// sortPrice function takes an array of array of products and sorts them by the price
+function sortPrice(array) {
+    array.sort(function (a, b){
+        if(a.price > b.price){
+            return 1;
+        }
+        if(a.price < b.price){
+            return -1;
+        }
+        return 0;
+    })
+    return array;
+}
+
+// console.log(sortPrice(products));
