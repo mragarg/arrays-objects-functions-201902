@@ -120,3 +120,18 @@ function strMultiply(str, time) {
 
 // console.log(strMultiply("testLOL", 6));
 
+// sortAlpha function sorts the given array in alphabetically order
+function sortAlpha(array) {
+    array.sort(function (a, b){
+        if(a > b){
+            return 1;
+        }
+        if(a < b){
+            return -1;
+        }
+        return 0;
+    })
+    return array;
+}
+
+console.log(sortAlpha(people));
