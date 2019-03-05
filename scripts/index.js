@@ -134,4 +134,20 @@ function sortAlpha(array) {
     return array;
 }
 
-console.log(sortAlpha(people));
+// console.log(sortAlpha(people));
+
+// sortLength function takes an array of names and sorts the array based on name length
+function sortLength(array) {
+    array.sort(function (a, b){
+        if(a.length > b.length){
+            return 1;
+        }
+        if(a.length < b.length){
+            return -1;
+        }
+        return 0;
+    })
+    return array;
+}
+
+// console.log(sortLength(people));
