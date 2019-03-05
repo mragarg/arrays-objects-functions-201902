@@ -21,3 +21,12 @@ function evenNumbers(array) {
 
 // console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, -8, 10]));
 
+// squareNumbers function takes an array of numbers and returns a new array with the result of each number sqaure
+function squareNumbers(array) {
+    let result = array.map(function (num){
+        return num * num;
+    })
+    return result;
+}
+
+console.log(squareNumbers([1, 2, 3, 4, 5, 6]));
